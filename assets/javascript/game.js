@@ -3,14 +3,19 @@
 $(document).ready(function() {
 
     // Variables //
+
     var total = 0;
     $('#total').text(total);
     var winningNumber = betweenNum(19,120);
     $('#winning-number').text(winningNumber);
-    var buttonOne = betweenNum(1,12);
+    var buttonOne = 1
     var buttonTwo = betweenNum(1,12);
     var buttonThree = betweenNum(1,12);
     var buttonFour = betweenNum(1,12);
+    var wins = 0;
+    $('#wins').text(wins)
+    var losses = 0;
+    $('#losses').text(losses)
 
     // Functions //
     function betweenNum(min,max) {
@@ -22,7 +27,7 @@ $(document).ready(function() {
         $('#winning-number').text(winningNumber);
         total = 0;
         $('#total').text(total);
-        buttonOne = betweenNum(1,12);
+        buttonOne = 1
         buttonTwo = betweenNum(1,12);
         buttonThree = betweenNum(1,12);
         buttonFour = betweenNum(1,12);
@@ -34,18 +39,22 @@ $(document).ready(function() {
         $('#total').text(total);
         if(total === winningNumber) {
             console.log('You win!')
+            wins++
+            $('#wins').text(wins)
             reset();
         }
 
         else if (total > winningNumber) {
             console.log('You lose!')
+            losses++
+            $('#losses').text(losses)
             reset();
         }
     
     });
 
     $('#btn2').on('click', function() {
-        total += buttonTwo
+        total += buttonTwo  
         $('#total').text(total);
         if(total === winningNumber) {
             console.log('You win!')
