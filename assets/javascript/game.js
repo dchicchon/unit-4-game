@@ -5,16 +5,18 @@ $(document).ready(function() {
     // Variables //
 
     var total = 0;
-    $('#total').text(total);
     var winningNumber = betweenNum(19,120);
-    $('#winning-number').text(winningNumber);
     var num = 0;
+    var wins = 0;
+    var losses = 0;
+
+    // Initial Jquery //
+    $('#total').text(total);
+    $('#winning-number').text(winningNumber);
     $('#btn1').val(1)
     $('#btn2').val(betweenNum(1,12))
     $('#btn3').val(betweenNum(1,12))
     $('#btn4').val(betweenNum(1,12))
-    var wins = 0;
-    var losses = 0;
     $('#wins').text(wins)
     $('#losses').text(losses)
 
@@ -53,63 +55,6 @@ $(document).ready(function() {
         }
     
     });
-
-    // $('#btn2').on('click', function() {
-    //     total += buttonTwo
-    //     $('#total').text(total);
-    //     if(total === winningNumber) {
-    //         console.log('You win!')
-    //         wins++
-    //         $('#wins').text(wins)
-    //         reset();
-    //     }
-
-    //     else if (total > winningNumber) {
-    //         console.log('You lose!')
-    //         losses++
-    //         $('#losses').text(losses)
-    //         reset();
-    //     }
-    
-    // });
-
-    // $('#btn3').on('click', function() {
-    //     total += buttonThree
-    //     $('#total').text(total);
-    //     if(total === winningNumber) {
-    //         console.log('You win!')
-    //         wins++
-    //         $('#wins').text(wins)
-    //         reset();
-    //     }
-
-    //     else if (total > winningNumber) {
-    //         console.log('You lose!')
-    //         losses++
-    //         $('#losses').text(losses)
-    //         reset();
-    //     }
-    
-    // });
-
-    // $('#btn4').on('click', function() {
-    //     total += buttonFour
-    //     $('#total').text(total);
-    //     if(total === winningNumber) {
-    //         console.log('You win!')
-    //         wins++
-    //         $('#wins').text(wins)
-    //         reset();
-    //     }
-
-    //     else if (total > winningNumber) {
-    //         console.log('You lose!')
-    //         losses++
-    //         $('#losses').text(losses)
-    //         reset();
-    //     }
-    
-    // });
 
 })
 
