@@ -13,8 +13,8 @@ $(document).ready(function() {
     var buttonThree = betweenNum(1,12);
     var buttonFour = betweenNum(1,12);
     var wins = 0;
-    $('#wins').text(wins)
     var losses = 0;
+    $('#wins').text(wins)
     $('#losses').text(losses)
 
     // Functions //
@@ -27,7 +27,6 @@ $(document).ready(function() {
         $('#winning-number').text(winningNumber);
         total = 0;
         $('#total').text(total);
-        buttonOne = 1
         buttonTwo = betweenNum(1,12);
         buttonThree = betweenNum(1,12);
         buttonFour = betweenNum(1,12);
@@ -54,15 +53,19 @@ $(document).ready(function() {
     });
 
     $('#btn2').on('click', function() {
-        total += buttonTwo  
+        total += buttonTwo
         $('#total').text(total);
         if(total === winningNumber) {
             console.log('You win!')
+            wins++
+            $('#wins').text(wins)
             reset();
         }
 
         else if (total > winningNumber) {
             console.log('You lose!')
+            losses++
+            $('#losses').text(losses)
             reset();
         }
     
@@ -73,11 +76,15 @@ $(document).ready(function() {
         $('#total').text(total);
         if(total === winningNumber) {
             console.log('You win!')
+            wins++
+            $('#wins').text(wins)
             reset();
         }
 
         else if (total > winningNumber) {
             console.log('You lose!')
+            losses++
+            $('#losses').text(losses)
             reset();
         }
     
@@ -88,11 +95,15 @@ $(document).ready(function() {
         $('#total').text(total);
         if(total === winningNumber) {
             console.log('You win!')
+            wins++
+            $('#wins').text(wins)
             reset();
         }
 
         else if (total > winningNumber) {
             console.log('You lose!')
+            losses++
+            $('#losses').text(losses)
             reset();
         }
     
