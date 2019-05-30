@@ -32,6 +32,10 @@ img {
     border: 1px solid; 
 }
 
+.btn:focus {
+    outline: none
+}
+
 button {
     background: none;
     border: none;
