@@ -9,23 +9,29 @@
     <script src="assets/javascript/game.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ranga&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-    </header>
     <main>
-        <button id = 'btn1' class = 'btn'> Button 1 <span></span></button>
-        <button id = 'btn2' class = 'btn'> Button 2 <span></span></button>
-        <button id = 'btn3' class = 'btn'> Button 3 <span></span></button>
-        <button id = 'btn4' class = 'btn'> Button 4 <span></span></button>
-        <h4>Total: <span id = 'total'></span></h4>
-        <h4>Winning Number: <span id = 'winning-number'></span></h4>
-        <h4>Wins: <span id = 'wins'></span></h4>
-        <h4>Losses: <span id = 'losses'></span></h4>
+        <header>
+            <h1>Collect the Candy!</h1>
+            <br>
+            <p>Click on a candy to collect it! Don't collect too much or you'll spill the basket!</p>
+            <br>
+        </header>
+        <section>
+            <button id = 'btn1' class = 'btn'> <img src="assets/images/candy1.png" alt="candy 1"><span></span></button>
+            <button id = 'btn2' class = 'btn'> <img src="assets/images/candy2.png" alt="candy 2"> <span></span></button>
+            <button id = 'btn3' class = 'btn'> <img src="assets/images/candy3.png" alt="candy 3"> <span></span></button>
+            <button id = 'btn4' class = 'btn'> <img src="assets/images/candy4.png" alt="candy 4"> <span></span></button>
+            <h4>Candies collected: <span id = 'total'></span></h4>
+            <h4>Max amount of candy for this basket: <span id = 'winning-number'></span></h4>
+            <h4>Baskets Collected: <span id = 'wins'></span></h4>
+            <h4>Baskets Spilled: <span id = 'losses'></span></h4>
+        </section>
     </main>
 
-</body>
+</section>
 </html>

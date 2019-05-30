@@ -30,9 +30,9 @@ $(document).ready(function() {
         $('#winning-number').text(winningNumber);
         total = 0;
         $('#total').text(total);
-        buttonTwo = betweenNum(1,12);
-        buttonThree = betweenNum(1,12);
-        buttonFour = betweenNum(1,12);
+        $('#btn2').val(betweenNum(1,12))
+        $('#btn3').val(betweenNum(1,12))
+        $('#btn4').val(betweenNum(1,12))
     }
 
     // Main Code // 
