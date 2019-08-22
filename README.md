@@ -1,4 +1,4 @@
-# unit-4-game
+# Candy Collect
 ## Site Screenshots
 
 ![Site Screenshot](/assets/images/site-screenshot.png)
